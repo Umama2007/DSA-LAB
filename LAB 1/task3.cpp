@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int x=1000000;
-    int*ptr=&x;
+    int*ptr=&x; //stores the address of x inside ptr.
     cout<<"Value of x: "<<x<<endl;
     cout<<"Address of x: "<<&x<<endl;
     cout<<"pointer value: "<<ptr<<endl;

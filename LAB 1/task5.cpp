@@ -15,10 +15,12 @@ cout << name << " " << rollNo << endl;
 }
 };
 int main() {
-Student s1("Ali", 101 );
-s1.display();
-Student* s2 = new Student("Ahmed", 105 );
-s2->display();
-delete s2;
+Student s1("Ali", 101 ); // stack object 
+s1.display(); // simple normal stack display okay
+Student* s2 = new Student("Ahmed", 105 ); // heap object
+s2->display(); //heap use arrow stack use dot 
+delete s2; // delete heap obj
 return 0;
 }
+// note: Normal object → use .
+ //Pointer to object → use ->

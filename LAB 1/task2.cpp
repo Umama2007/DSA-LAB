@@ -5,7 +5,10 @@ class Student
 { public:
 string name;
 int rollNo;
- Student(string n, int r) 
+ Student(string n, int r) // constructor 
+ // Constructor name must match class name: Student
+ //It has no return type, so do not write void Student(...)
+ //It runs automatically when an object is created
  {name=n; rollNo=r; }
 void display()
 { cout<<name<<"-"<< rollNo<<endl; }
